@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "Inter";
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    --green: hsl(75, 94%, 57%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+
+    font-family: "Inter";
+    font-size: 14px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Grey-900);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-panel {
+    width: 25vw;
+    min-width: 350px;
+    max-width: 480px;
+    height: 70vh;
+    background-color: var(--Grey-800);
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.person-avatar {
+    width: 20%;
+    height: auto;
+    margin-top: 8%;
+    border-radius: 50%;
+}
+
+.person-name {
+    color: white;
+    font-weight: 600;
+    font-size: 28px;
+    margin-top: 6%;
+
+    @media (max-width: 480px){
+        font-size: 22px;
+    }
+}
+
+.person-location {
+    color: var(--green);
+    font-size: 16px;
+    margin-top: 2%;
+
+    @media (max-width: 480px){
+        font-size: 14px;
+    }
+}
+
+.person-quote {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 6%;
+
+    @media (max-width: 480px){
+        font-size: 14px;
+    }
+}
+
+.social-button {
+    background-color: var(--Grey-700);
+    border: none;
+    width: 80%;
+    height: 8%;
+    border-radius: 10px;
+    margin-top: 3%;
+    color: white;
+    font-weight: 700;
+}
+
+.social-button:first-of-type {
+    margin-top: 6%;
+}
+
+.social-button:hover {
+    color: var(--green);
+    cursor: pointer;
+}
+
+.social-button:focus {
+    color: var(--green);
+    cursor: pointer;
+}
