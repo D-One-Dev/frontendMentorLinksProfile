@@ -29,9 +29,7 @@ body {
 }
 
 .main-panel {
-    width: 25vw;
-    min-width: 350px;
-    max-width: 480px;
+    width: clamp(350px, 25vw, 480px);
     height: 70vh;
     background-color: var(--Grey-800);
     border-radius: 25px;
